@@ -7,6 +7,6 @@ RUN dnf install -y --nogpgcheck --repo=terra terra-gpg-keys && \
     dnf up -y && \
     dnf install -y \
 terra-mock-configs terra-appstream-helper terra-cli-tools redhat-rpm-config epel-rpm-macros almalinux-release \
-subatomic-cli anda{,-srpm-macros} rpm-build podman fuse-overlayfs mold dnf-plugins-core \
+subatomic-cli anda{,-srpm-macros} cargo4rpm rpm-build podman fuse-overlayfs mold lld dnf-plugins-core \
 wget less gh util-linux bash bzip2 cpio diffutils findutils gawk glibc-minimal-langpack grep info patch sed tar gzip unzip which xz jq && \
     dnf clean packages dbcache
